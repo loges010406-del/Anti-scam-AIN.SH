@@ -1,0 +1,64 @@
+{
+  "updatedLabel": "DEMO DATA — illustrative figures only, not official statistics",
+  "kpis": [
+    { "label": "Reports this week (demo)", "value": "1,284" },
+    { "label": "Most reported type (demo)", "value": "Phishing links" },
+    { "label": "Rising scam (demo)", "value": "Parcel / courier" },
+    { "label": "States affected (demo)", "value": "16 / 16" }
+  ],
+  "weeklyByType": [
+    { "type": "Phishing links", "count": 342 },
+    { "type": "Parcel / courier", "count": 268 },
+    { "type": "Macau scam (police/bank)", "count": 201 },
+    { "type": "Investment / crypto", "count": 174 },
+    { "type": "Loan / fast cash", "count": 128 },
+    { "type": "OTP / TAC request", "count": 96 },
+    { "type": "Job / part-time", "count": 75 }
+  ],
+  "trend8w": [
+    { "week": "W1", "count": 812 },
+    { "week": "W2", "count": 905 },
+    { "week": "W3", "count": 878 },
+    { "week": "W4", "count": 1024 },
+    { "week": "W5", "count": 1137 },
+    { "week": "W6", "count": 1098 },
+    { "week": "W7", "count": 1203 },
+    { "week": "W8", "count": 1284 }
+  ],
+  "states": [
+    { "name": "Johor", "isFederalTerritory": false, "count": 142 },
+    { "name": "Kedah", "isFederalTerritory": false, "count": 68 },
+    { "name": "Kelantan", "isFederalTerritory": false, "count": 54 },
+    { "name": "Melaka", "isFederalTerritory": false, "count": 61 },
+    { "name": "Negeri Sembilan", "isFederalTerritory": false, "count": 73 },
+    { "name": "Pahang", "isFederalTerritory": false, "count": 59 },
+    { "name": "Perak", "isFederalTerritory": false, "count": 97 },
+    { "name": "Perlis", "isFederalTerritory": false, "count": 18 },
+    { "name": "Pulau Pinang", "isFederalTerritory": false, "count": 118 },
+    { "name": "Sabah", "isFederalTerritory": false, "count": 86 },
+    { "name": "Sarawak", "isFederalTerritory": false, "count": 91 },
+    { "name": "Selangor", "isFederalTerritory": false, "count": 231 },
+    { "name": "Terengganu", "isFederalTerritory": false, "count": 47 },
+    { "name": "Wilayah Persekutuan Kuala Lumpur", "isFederalTerritory": true, "count": 164 },
+    { "name": "Wilayah Persekutuan Labuan", "isFederalTerritory": true, "count": 9 },
+    { "name": "Wilayah Persekutuan Putrajaya", "isFederalTerritory": true, "count": 22 }
+  ],
+  "trendingNow": [
+    {
+      "title": "Fake courier redelivery fees (demo)",
+      "note": "Messages claiming a parcel is held and asking for a small customs or redelivery payment via a shortened link."
+    },
+    {
+      "title": "Bank security verification calls (demo)",
+      "note": "Callers posing as bank staff asking you to read out an OTP or TAC to stop a fake unauthorised transfer."
+    },
+    {
+      "title": "Guaranteed investment returns (demo)",
+      "note": "Chat groups promising fixed high returns with urgency to deposit before a deadline."
+    },
+    {
+      "title": "Easy part-time job offers (demo)",
+      "note": "Unsolicited offers to earn money by completing simple tasks that later ask for an upfront deposit."
+    }
+  ]
+}

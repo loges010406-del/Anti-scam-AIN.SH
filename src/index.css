@@ -1,0 +1,138 @@
+﻿/**
+ * Global stylesheet for Semak Dulu (ScamShield).
+ *
+ * Tailwind layers + base theme tokens. The navy palette, risk colours,
+ * card radius, 18px base font, UI typeface, and sizing tokens live in
+ * tailwind.config.ts (theme.extend). Base defaults are applied here so the
+ * 18px base font (R24.3) and sans typeface (R24.4) take effect app-wide.
+ *
+ * Print CSS, reduced-motion rules, and focus-visible styling are layered in
+ * by later tasks (see tasks.md 20.1, 26.1).
+ *
+ * _Requirements: 24.1, 24.2, 24.3, 24.4, 25.6_
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Base tokens placeholder: 18px base font (R24.3) + UI typeface (R24.4). */
+  html {
+    font-size: theme('fontSize.base');
+    font-family: theme('fontFamily.sans');
+  }
+
+  body {
+    margin: 0;
+    /* Prevent horizontal scroll safeguard (R23.1); refined in later tasks. */
+    overflow-x: hidden;
+    background-color: #F4F7FC;
+    background-image: radial-gradient(1200px 500px at 100% -10%, rgba(59, 130, 246, 0.10), transparent 60%),
+      radial-gradient(900px 400px at -10% 0%, rgba(18, 48, 107, 0.06), transparent 60%);
+    background-attachment: fixed;
+    color: theme('colors.navy.DEFAULT');
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  :focus-visible {
+    outline: 3px solid theme('colors.accent');
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: rgba(59, 130, 246, 0.25);
+  }
+}
+
+@layer components {
+  .bg-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+  .card {
+    @apply rounded-2xl bg-white/90 shadow-lift ring-1 ring-navy/5 backdrop-blur;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-violet-600 to-fuchsia-600 bg-clip-text text-transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Print stylesheet (tasks.md 20.1, Requirement 18.1).
+ *
+ * Goal: when the user prints (e.g. the Safety Card via window.print()), hide
+ * the app chrome and render a clean, high-contrast, print-friendly card.
+ *
+ * Convention: any on-screen-only chrome (sidebar, bottom nav, header actions,
+ * the print button) is tagged with the `.no-print` class and hidden here. The
+ * printable card is tagged `.print-card`.
+ *
+ * This block is appended last and intentionally does not touch the Tailwind
+ * layers or base tokens above (see tasks.md note: 5.2 and 26.1 also edit this
+ * file).
+ */
+@media print {
+  /* Hide app chrome and any element explicitly marked as screen-only. */
+  .no-print,
+  nav,
+  aside,
+  [data-chrome='sidebar'],
+  [data-chrome='bottom-nav'] {
+    display: none !important;
+  }
+
+  /* Reset the page surface to white for ink-friendly, high-contrast output. */
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    /* Allow the content to flow for print; drop the screen scroll safeguard. */
+    overflow: visible !important;
+  }
+
+  /* High-contrast, borderless, full-width card that fills the printed page. */
+  .print-card {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Keep each reminder together on a single page where possible. */
+  .print-card li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border-color: #000000 !important;
+  }
+
+  /* Ensure accents/muted text print as solid black for legibility. */
+  .print-card :where(h1, h2, h3, p, li, span, footer) {
+    color: #000000 !important;
+  }
+
+  .print-card :where(header, section, footer) {
+    border-color: #000000 !important;
+  }
+
+  /* Request browsers honour background/colour where the user allows it. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+

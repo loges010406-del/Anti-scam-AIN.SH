@@ -1,0 +1,150 @@
+[
+  {
+    "id": "quiz-macau-police",
+    "content": "Encik, saya Inspektor Tan dari Bukit Aman. Nama anda terlibat dalam kes pengubahan wang haram. Siasatan ini SULIT, jangan beritahu keluarga. Untuk buktikan anda tidak bersalah, sila transfer semua baki ke akaun selamat kerajaan ini untuk pengesahan. Jika tidak, waran tangkap dikeluarkan dalam 24 jam.",
+    "isScam": true,
+    "scamType": "Macau scam",
+    "explanation": "Ini Macau scam. Polis sebenar TIDAK PERNAH minta anda pindah duit ke 'akaun selamat' atau rahsiakan daripada keluarga. Ancaman tangkap + arahan transfer segera + suruh senyap adalah corak klasik penipuan. Letak telefon dan sahkan terus di balai polis.",
+    "redFlags": [
+      { "phrase": "jangan beritahu keluarga", "reason": "Penipu suruh rahsiakan supaya tiada orang nasihatkan anda berhenti." },
+      { "phrase": "transfer semua baki ke akaun selamat", "reason": "Tiada 'akaun selamat kerajaan'. Pihak berkuasa tidak minta anda pindah duit." },
+      { "phrase": "waran tangkap dikeluarkan dalam 24 jam", "reason": "Ancaman + tekanan masa untuk buat anda panik dan patuh." }
+    ]
+  },
+  {
+    "id": "quiz-parcel-courier",
+    "content": "Pos Laju: Bungkusan anda ditahan di kastam. Bayaran cukai RM2.90 diperlukan dalam 6 jam atau parcel dilupuskan. Kemas kini maklumat & bayar di sini: http://poslaju-track.my-parcel.top/clear",
+    "isScam": true,
+    "scamType": "Parcel/courier scam",
+    "explanation": "Ini parcel scam. Jumlah bayaran kecil (RM2.90) sengaja dipilih supaya anda rasa 'tak rugi' dan masukkan maklumat kad di laman palsu. Perhatikan URL pelik (bukan domain rasmi Pos). Jangan klik — semak status melalui aplikasi atau laman rasmi kurier.",
+    "redFlags": [
+      { "phrase": "dalam 6 jam atau parcel dilupuskan", "reason": "Tekanan masa untuk halang anda semak dengan tenang." },
+      { "phrase": "http://poslaju-track.my-parcel.top/clear", "reason": "Domain bukan laman rasmi; pautan mengarah ke tapak palsu." }
+    ]
+  },
+  {
+    "id": "quiz-bank-phishing",
+    "content": "Dear customer, your CIMB Clicks account is temporarily blocked due to unusual activity. Reactivate within 1 hour to avoid permanent closure: https://cimb-clicks-verify.secure-login.cc/account",
+    "isScam": true,
+    "scamType": "Phishing",
+    "explanation": "Ini phishing. Bank tidak hantar pautan untuk anda 'reactivate' akaun dan masukkan password. Domain itu bukan laman rasmi bank. Buka aplikasi bank sendiri atau taip alamat rasmi secara manual — jangan ikut pautan dalam mesej.",
+    "redFlags": [
+      { "phrase": "Reactivate within 1 hour", "reason": "Tekanan masa supaya anda bertindak sebelum sempat fikir." },
+      { "phrase": "https://cimb-clicks-verify.secure-login.cc/account", "reason": "Domain palsu meniru bank; laman sebenar tidak begini." }
+    ]
+  },
+  {
+    "id": "quiz-otp-tac",
+    "content": "Bro ni dari security team bank. Kitorang nampak ada orang cuba login akaun u. Nak block transaksi tu, u bagi je OTP yang baru masuk kat phone u sekarang. Jangan share kat orang lain, bagi kat saya je ya. Cepat sikit!",
+    "isScam": true,
+    "scamType": "OTP/TAC scam",
+    "explanation": "Ini penipuan OTP/TAC. OTP ialah kunci terakhir ke akaun anda — tiada pekerja bank yang sah akan minta OTP. Sesiapa yang minta OTP sedang cuba curi duit anda. Jangan beri, dan hubungi bank melalui nombor rasmi di belakang kad.",
+    "redFlags": [
+      { "phrase": "u bagi je OTP yang baru masuk kat phone", "reason": "Bank sah tidak sekali-kali minta OTP; OTP untuk anda sahaja." },
+      { "phrase": "Jangan share kat orang lain, bagi kat saya je", "reason": "Minta anda rahsiakan supaya tiada orang halang." }
+    ]
+  },
+  {
+    "id": "quiz-lhdn-tax",
+    "content": "NOTIS LHDN: Anda ada tunggakan cukai RM3,920. Bayar hari ini untuk elak tindakan mahkamah dan sekatan perjalanan. Semak & bayar: http://lhdn-ehasil.bayar-now.xyz/notis",
+    "isScam": true,
+    "scamType": "LHDN/tax scam",
+    "explanation": "Ini scam cukai LHDN. Agensi kerajaan tidak menuntut bayaran segera melalui pautan SMS/WhatsApp dengan ancaman mahkamah. Jangan klik. Log masuk portal rasmi MyTax sendiri atau hubungi talian rasmi LHDN untuk sahkan.",
+    "redFlags": [
+      { "phrase": "Bayar hari ini untuk elak tindakan mahkamah dan sekatan perjalanan", "reason": "Ancaman + tekanan masa, taktik biasa penipu." },
+      { "phrase": "http://lhdn-ehasil.bayar-now.xyz/notis", "reason": "Bukan domain kerajaan rasmi (.gov.my); laman palsu." }
+    ]
+  },
+  {
+    "id": "quiz-investment-forex",
+    "content": "GUARANTEED profit! Invest RM1,000 today in our forex robot and withdraw RM9,000 in 5 days. Zero risk, 100% sure. Slots limited! Pay a small RM250 activation fee first to unlock your account. WhatsApp admin now before it's full!",
+    "isScam": true,
+    "scamType": "Investment scam",
+    "explanation": "Ini scam pelaburan. Tiada pelaburan sah yang 'jamin' untung besar tanpa risiko dalam beberapa hari. 'Yuran pengaktifan' di hadapan ialah umpan — selepas bayar, duit anda hilang. Semak lesen pengendali dengan pengawal selia kewangan sebelum melabur.",
+    "redFlags": [
+      { "phrase": "GUARANTEED profit", "reason": "Pulangan 'dijamin' tanpa risiko tidak wujud dalam pelaburan sah." },
+      { "phrase": "Pay a small RM250 activation fee first", "reason": "Bayaran awal untuk 'buka' akaun ialah umpan penipuan." },
+      { "phrase": "Slots limited", "reason": "Cipta rasa terdesak supaya anda bayar tanpa menyemak." }
+    ]
+  },
+  {
+    "id": "quiz-job-scam",
+    "content": "Hi! We saw your resume. Easy work-from-home job: like videos & complete simple tasks, earn RM300-RM800 daily. To start, just pay RM180 deposit as member registration, refundable later. Join our Telegram group now to begin earning today!",
+    "isScam": true,
+    "scamType": "Job scam",
+    "explanation": "Ini scam kerja. Kerja sah tidak minta anda BAYAR untuk mula bekerja. 'Deposit boleh refund' + bayaran harian tinggi untuk tugas remeh ialah umpan task scam. Majikan benar membayar anda, bukan sebaliknya.",
+    "redFlags": [
+      { "phrase": "pay RM180 deposit as member registration", "reason": "Kerja sah tidak minta deposit untuk mula bekerja." },
+      { "phrase": "earn RM300-RM800 daily", "reason": "Ganjaran tak munasabah untuk tugas mudah — umpan." }
+    ]
+  },
+  {
+    "id": "quiz-lucky-draw",
+    "content": "TAHNIAH! Nombor anda terpilih memenangi iPhone 15 Pro & RM5,000 tunai dalam cabutan Shopee 11.11! Untuk tuntut hadiah, bayar yuran penghantaran & cukai RM88 ke akaun ini dalam 2 jam. Hadiah akan dibatalkan jika lewat.",
+    "isScam": true,
+    "scamType": "Lucky draw/prize scam",
+    "explanation": "Ini scam cabutan bertuah. Anda tidak boleh 'menang' peraduan yang anda tak pernah sertai, dan hadiah sah tidak memerlukan anda BAYAR dahulu untuk tuntut. Minta bayaran 'cukai/penghantaran' di hadapan ialah tanda penipuan.",
+    "redFlags": [
+      { "phrase": "bayar yuran penghantaran & cukai RM88", "reason": "Hadiah sah tidak minta bayaran untuk dituntut." },
+      { "phrase": "Hadiah akan dibatalkan jika lewat", "reason": "Tekanan masa supaya anda bayar tergesa-gesa." }
+    ]
+  },
+  {
+    "id": "quiz-impersonate-child",
+    "content": "Mak, ni anak mak. Phone lama rosak, ni nombor baru. Mak, anak ada hal urgent kena bayar sekarang tapi akaun anak kena lock. Boleh tolong transfer RM2,500 ke akaun kawan anak ni dulu? Nanti anak bayar balik. Jangan telefon dulu mak, anak tengah busy.",
+    "isScam": true,
+    "scamType": "Impersonation scam",
+    "explanation": "Ini scam menyamar sebagai ahli keluarga. 'Nombor baru + jangan telefon + transfer segera' direka supaya anda tak sempat sahkan. Selalu hubungi anak anda melalui nombor LAMA yang anda tahu sebelum hantar sebarang duit.",
+    "redFlags": [
+      { "phrase": "ni nombor baru", "reason": "Nombor baharu menghalang anda sahkan identiti sebenar." },
+      { "phrase": "Jangan telefon dulu mak", "reason": "Elak panggilan supaya penipuan tak terbongkar." },
+      { "phrase": "transfer RM2,500 ke akaun kawan anak", "reason": "Minta pindah ke akaun pihak ketiga — tanda penipuan." }
+    ]
+  },
+  {
+    "id": "quiz-loan-upfront",
+    "content": "Pinjaman peribadi DILULUSKAN! RM30,000, tiada dokumen, tiada semak CCRIS/CTOS, kadar faedah terendah di Malaysia. Hanya perlu bayar yuran guaman & insurans RM600 dahulu untuk lepaskan dana ke akaun anda hari ini. WhatsApp pegawai kami sekarang.",
+    "isScam": true,
+    "scamType": "Loan scam",
+    "explanation": "Ini scam pinjaman. Pemberi pinjaman berlesen semak rekod kredit anda dan tidak minta yuran dibayar DAHULU sebelum lepaskan pinjaman. 'Lulus tanpa dokumen' + bayaran awal ialah umpan. Semak lesen pemberi pinjaman dengan pihak berkuasa.",
+    "redFlags": [
+      { "phrase": "tiada semak CCRIS/CTOS", "reason": "Pemberi pinjaman sah sentiasa menyemak rekod kredit." },
+      { "phrase": "bayar yuran guaman & insurans RM600 dahulu", "reason": "Bayaran awal sebelum pinjaman keluar ialah penipuan." }
+    ]
+  },
+  {
+    "id": "quiz-legit-delivery",
+    "content": "Hi, pesanan anda #SD48217 sedang dalam perjalanan dan dijangka tiba hari ini antara 3pm hingga 7pm. Jika anda tiada di rumah, penghantar akan tinggalkan di pondok pengawal. Terima kasih kerana membeli-belah dengan kami!",
+    "isScam": false,
+    "explanation": "Ini mesej penghantaran yang sah. Ia hanya memaklumkan status pesanan anda, tidak minta bayaran, tiada pautan mencurigakan, dan tiada tekanan masa atau ancaman. Mesej begini selamat.",
+    "redFlags": []
+  },
+  {
+    "id": "quiz-legit-clinic",
+    "content": "Peringatan temujanji: Anda ada temujanji susulan di Klinik Kesihatan pada 20 Jun, pukul 9:30 pagi. Sila bawa kad pengenalan dan buku rawatan. Hubungi klinik di talian biasa jika perlu menukar tarikh.",
+    "isScam": false,
+    "explanation": "Ini peringatan temujanji klinik yang sah. Tiada permintaan wang, OTP, atau maklumat peribadi sulit, dan ia menggalakkan anda hubungi klinik melalui talian biasa. Tiada tanda penipuan.",
+    "redFlags": []
+  },
+  {
+    "id": "quiz-legit-family",
+    "content": "Abang, I dah sampai rumah selamat tadi. Jalan jam sikit sebab hujan. Esok I ambik kakak dekat airport pukul 10 pagi eh. Nanti I bagitahu kalau flight delay.",
+    "isScam": false,
+    "explanation": "Ini mesej peribadi biasa daripada keluarga. Ia hanya berkongsi perkembangan harian, tiada permintaan wang, pautan, atau tekanan. Mesej begini selamat dan normal.",
+    "redFlags": []
+  },
+  {
+    "id": "quiz-legit-bank-notice",
+    "content": "Maybank: Satu transaksi QR sebanyak RM45.00 telah berjaya di CAFE SELERA pada 10/06 2:14PM. Jika ini bukan anda, hubungi talian khidmat pelanggan rasmi di belakang kad anda. (Kami tidak akan sekali-kali minta OTP atau kata laluan anda.)",
+    "isScam": false,
+    "explanation": "Ini notifikasi transaksi sah daripada bank. Ia memaklumkan transaksi yang telah berlaku, tidak minta OTP atau pautan, dan mengarahkan anda hubungi nombor rasmi di belakang kad. Perhatikan ia secara jelas menyatakan bank TIDAK minta OTP.",
+    "redFlags": []
+  },
+  {
+    "id": "quiz-legit-otp-info",
+    "content": "123456 is your one-time verification code. Do not share this code with anyone, including bank staff. This code expires in 5 minutes.",
+    "isScam": false,
+    "explanation": "Ini mesej OTP sah daripada sistem apabila ANDA sendiri sedang log masuk atau membuat transaksi. Perhatikan ia memberi amaran supaya jangan kongsi kod dengan sesiapa. OTP itu sendiri selamat — bahaya hanya datang jika ada orang MINTA anda kongsikannya.",
+    "redFlags": []
+  }
+]

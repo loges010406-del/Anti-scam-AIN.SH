@@ -1,0 +1,62 @@
+[
+  {
+    "id": "scam-macau-police",
+    "label": "Macau scam — polis & BNM",
+    "content": "Encik, ini Sarjan Lim dari Ibu Pejabat Polis Bukit Aman. Akaun bank anda dikesan terlibat dalam kes pengubahan wang haram dan siasatan Bank Negara Malaysia. Anda perlu beri kerjasama SEGERA atau waran tangkap akan dikeluarkan dalam masa 24 jam. JANGAN beritahu sesiapa termasuk keluarga kerana ini kes sulit. Sila sahkan nombor akaun dan baki anda sekarang untuk pengesahan.",
+    "category": "scam"
+  },
+  {
+    "id": "scam-parcel-pos",
+    "label": "Parcel scam — Pos Malaysia",
+    "content": "Pos Malaysia: Parcel anda GAGAL dihantar kerana alamat tidak lengkap. Bayaran cukai kastam RM3.50 diperlukan untuk pelepasan dalam 12 jam atau bungkusan akan dipulangkan. Kemas kini maklumat & bayar di sini: http://pos-malaysia-delivery.bit.ly/track2024",
+    "category": "scam"
+  },
+  {
+    "id": "scam-bank-phishing",
+    "label": "Phishing — Maybank link",
+    "content": "Dear customer, your Maybank2u account has been temporarily locked due to suspicious login activity. Verify your identity now to avoid permanent suspension: https://maybank-secure-login.bit.ly/verify. Failure to act within 1 hour will result in account closure.",
+    "category": "scam"
+  },
+  {
+    "id": "scam-otp-tac",
+    "label": "OTP / TAC request",
+    "content": "Bro ni dari customer service bank eh. Kitorang detect ada orang try masuk akaun u. Untuk block, u kena bagi kitorang OTP yang baru sampai kat phone u tu. Jgn share kat sesiapa lain tau, bagi kat saya je. Cepat sikit sebelum duit u kena transfer out!",
+    "category": "scam"
+  },
+  {
+    "id": "scam-lhdn-tax",
+    "label": "LHDN tax scam",
+    "content": "NOTIS LHDN: Anda mempunyai tunggakan cukai pendapatan sebanyak RM4,280. Bayaran mesti dibuat hari ini bagi mengelakkan tindakan mahkamah dan sekatan perjalanan. Klik untuk semak & bayar: http://lhdn-ehasil-bayar.xyz/notis. Abaikan notis ini akan menyebabkan tindakan undang-undang.",
+    "category": "scam"
+  },
+  {
+    "id": "scam-investment-loan",
+    "label": "Investment / loan scam",
+    "content": "CONGRATS! You are pre-approved for a RM50,000 personal loan with 0% interest, no documents needed! Or invest RM1,000 today and earn GUARANTEED RM8,000 in 7 days through our forex robot. Limited slots! Pay a small RM300 processing fee first to unlock. WhatsApp admin now, don't miss out!",
+    "category": "scam"
+  },
+  {
+    "id": "scam-safe-account",
+    "label": "'Safe account' transfer + job",
+    "content": "Encik, untuk melindungi wang anda daripada penggodam, pihak kami akan pindahkan dana ke 'akaun selamat' sementara kerajaan. Sila transfer baki akaun anda ke nombor akaun ini sekarang. Selain itu kami ada tawaran kerja part-time, komisen tinggi, kerja dari rumah, hanya perlu deposit RM200 untuk mula. Rahsiakan perkara ini.",
+    "category": "scam"
+  },
+  {
+    "id": "legit-delivery-notice",
+    "label": "Legit — delivery notice",
+    "content": "Hi, your order #SD10294 is out for delivery today and should arrive between 2pm and 6pm. If you're not home, our rider will leave it with the guardhouse. Thank you for shopping with us!",
+    "category": "legit"
+  },
+  {
+    "id": "legit-personal-message",
+    "label": "Legit — personal message",
+    "content": "Mak, I reached the office already. Jangan risau. Nanti balik I singgah pasar beli ikan untuk dinner. Mak nak I belikan apa-apa lagi tak?",
+    "category": "legit"
+  },
+  {
+    "id": "legit-appointment-reminder",
+    "label": "Legit — clinic reminder",
+    "content": "Peringatan temujanji: Anda ada temujanji susulan di Klinik Kesihatan pada 14 Mac, pukul 10:00 pagi. Sila bawa kad pengenalan dan buku rawatan anda. Hubungi klinik jika perlu menukar tarikh.",
+    "category": "legit"
+  }
+]
